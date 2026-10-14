@@ -20,6 +20,7 @@ function ensureChartJS(){
 /* ===== extracted script block ===== */
 
 /* BANCO DE DADOS - COMPATIBILIDADE INTEGRAL PRESERVADA */
+const db = firebase.firestore();
 const STORAGE_KEY = "studio_pilates_louise_karla_v2";
 const BACKUP_KEY = "studio_pilates_louise_karla_v2_backup";
 const META_KEY = "studio_pilates_louise_karla_v2_meta";
