@@ -25,7 +25,29 @@
 <title>Studio Pilates LOUISE KARLA — Sistema de Gestão</title>
 
 <meta name="application-version" content="v123-agenda-integrada"><meta name="application-integrity" content="dashboard-equipment-live-history-7-column-comfort">
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/13.0.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/13.0.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyB5wtS2fkm232Bu9n2iJbLH814RJtYBXmc",
+    authDomain: "studio123-96a30.firebaseapp.com",
+    projectId: "studio123-96a30",
+    storageBucket: "studio123-96a30.firebasestorage.app",
+    messagingSenderId: "160840523758",
+    appId: "1:160840523758:web:12f271d83e942040bd78ff",
+    measurementId: "G-HN7F75LHKW"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
   <style>
 
 :root{
