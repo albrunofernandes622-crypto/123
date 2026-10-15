@@ -772,8 +772,8 @@ function saveStudent(){
     }else{
       // Novo cadastro: nunca substitui os existentes; sempre acrescenta.
       db.students.push(student);
+      db.collection('students').add(estudante);
     }
-
     const studentsSnapshot=mergeStudentRecords([],db.students);
     if(!saveStudentVault(studentsSnapshot)){
       toast("Não foi possível salvar o cadastro dos alunos. Verifique o armazenamento do navegador.");
