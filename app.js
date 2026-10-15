@@ -705,6 +705,7 @@ function openStudentModal(id=null){
     </div>
   `;
   openModal(id ? "Editar Aluno" : "Cadastrar Novo Aluno", body, saveStudent);
+  const db = firebase.firestore();
   const studentSaveButton=document.getElementById("modalSave");
   if(studentSaveButton){
     studentSaveButton.innerHTML = '<span class="ios-save-icon" aria-hidden="true">✓</span> ' + (id ? 'Salvar alterações' : 'Salvar aluno');
